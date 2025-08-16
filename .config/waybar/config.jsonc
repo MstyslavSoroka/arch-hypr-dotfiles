@@ -1,0 +1,60 @@
+// Waybar Config
+// By Mstyslav
+{
+  "modules-left": [
+    "custom/rofi",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "hyprland/window",
+    "hyprland/language",
+    "pulseaudio",
+    "mpris",
+    "custom/exit"
+  ],
+  "custom/rofi": {
+    "format": "",
+    "tooltip": "Launch Menu",
+    "on-click": "rofi -show drun",
+    "interval": 0
+  },
+  "hyprland/window": {
+    "icon": true,
+    "format": "",
+    "icon-size": 18
+  },
+  "clock": {
+    "format": "{:%a %d %b  %H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": " muted",
+    "on-click": "pavucontrol"
+  },
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "max-length": 25,
+    "player-icons": {
+      "default": "󰎆 ",
+      "cmus": " ",
+      "mpv": "🎵",
+      "vlc": "🎬",
+      "spotify": " "
+    },
+    
+  },
+  "custom/exit": {
+    "format": "",
+    "on-click": "wlogout",
+  },
+  "hyprland/language": {
+    "format": "\uf11c  {}",
+    "format-en": "us",
+    "format-tr": "trq",
+    "on-click": "hyprctl switchxkblayout vxe-v87-vxe-v87 next"
+  }
+}

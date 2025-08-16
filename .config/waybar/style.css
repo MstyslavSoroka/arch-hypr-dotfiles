@@ -1,0 +1,90 @@
+@import "/home/mstyslav/.config/waybar/colors.css";
+
+
+* {
+  color: @on_background;
+}
+
+
+#waybar {
+  background-color: transparent;
+  color: @on_background;
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-size: 14px;
+}
+
+
+
+#custom-rofi {
+  background-color: @background;
+  color: @bg;
+  border-radius: 15px 0 0 15px;
+  padding: 0 15px;
+  margin: 10px 0 0 20px
+}
+
+#workspaces {
+  background-color: @background;
+  padding: 0 10px 0 10px;
+  border-radius: 0 15px 15px 0;
+  margin-top: 10px;
+}
+
+#workspaces button.active {
+  color: @on-background;
+}
+
+#workspaces button {
+  border: none;
+}
+
+#workspaces button:hover {
+  border-color: transparent;
+  box-shadow: none;
+  background: none;
+  text-shadow: none;
+}
+
+#clock {
+  background-color: @background;
+  margin-top: 10px;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+#window {
+  background-color: @background;
+  margin: 10px 10px 0 0;
+
+  padding: 0 7.5px 0 7.5px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#pulseaudio {
+  background-color: @background;
+  margin: 10px 10px 0 0;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+#language {
+  background-color: @background;
+  margin: 10px 10px 0 0;
+  border-radius: 15px;
+  padding: 0 15px;
+}
+
+
+#mpris {
+  background-color: @background;
+  margin: 10px 10px 0 0;
+  padding: 0 10px;
+  border-radius: 15px; 
+}
+
+#custom-exit {
+  background-color: @background;
+  padding: 0 14px 0 10px;
+  border-radius: 15px;
+  margin: 10px 20px 0 0;
+}

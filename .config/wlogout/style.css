@@ -1,0 +1,59 @@
+@import "colors.css";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: none;
+    transition: 20ms;
+}
+
+window {
+    background-color: rgba(12, 12, 12, 0.5);
+}
+
+button {
+    color: @on_surface;
+    font-size: 20px;
+    border: 2px solid @outline_variant;
+    background-color: rgba(12, 12, 12, 0.2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border-radius: 1em;
+    text-shadow: none;
+    margin: 10px;
+    transition: 0.2s ease-out;
+}
+
+/* Hover/focus/active */
+button:focus,
+button:active,
+button:hover {
+    color: @on_background;
+    border-color: @primary;
+    background-color: @primary_container;
+}
+
+/* Buttons with icons */
+#lock {
+    background-image: image(url("icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot.png"));
+}
